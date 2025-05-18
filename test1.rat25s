@@ -1,0 +1,19 @@
+$$
+[* NO functions *]
+$$
+integer a,b;
+boolean greater,equal;
+$$
+scan(a);
+scan(b);
+greater = false;
+equal = false;
+if(a > b){
+    greater = true;
+} else {
+    if(a == b){
+        equal = true;
+    } endif
+} endif
+print(greater); print(equal);
+$$

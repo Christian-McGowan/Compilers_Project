@@ -1,0 +1,47 @@
+
+=== Running Test Case: test3.rat25s ===
+
+
+Symbol Table:
+Identifier      Memory Address     Type
+----------------------------------------
+n              10000             integer
+result         10001             integer
+temp           10002             integer
+
+Assembly Listing:
+[ 1]   SIN                
+[ 2]   POPM   10000       
+[ 3]   PUSHI  1           
+[ 4]   STO    result        ; result = <expr>
+[ 5]   PUSHM  10000       
+[ 6]   STO    temp          ; temp = <expr>
+[ 7]   PUSHM  10002       
+[ 8]   PUSHI  1           
+[ 9]   CMP_GT               ; compare >
+[10]   LABEL              
+[11]   JMP0   21          
+[12]   PUSHM  10001       
+[13]   PUSHM  10002       
+[14]   M                  
+[15]   STO    result        ; result = <expr>
+[16]   PUSHM  10002       
+[17]   PUSHI  1           
+[18]   S                  
+[19]   STO    temp          ; temp = <expr>
+[20]   JMP    10          
+[21]   PUSHM  10001       
+[22]   SOUT               
+[23]   PUSHM  10000       
+[24]   SOUT               
+[25]   PUSHM  10002       
+[26]   SOUT               
+[27]   PUSHI  0           
+[28]   SOUT               
+[29]   PUSHI  1           
+[30]   SOUT               
+[31]   PUSHM  10001       
+[32]   SOUT               
+
+========================================
+

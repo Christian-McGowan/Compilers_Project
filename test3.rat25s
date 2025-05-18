@@ -1,0 +1,19 @@
+$$
+[* NO function definitions allowed *]
+$$
+integer n, result, temp; [* declarations *]
+$$
+scan(n);
+result = 1;
+temp = n;
+while (temp > 1) {
+    result = result * temp;
+    temp = temp - 1;
+} endwhile
+print(result);
+print(n);
+print(temp);
+print(0);
+print(1);
+print(result);
+$$

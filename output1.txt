@@ -1,0 +1,38 @@
+
+=== Running Test Case: test1.rat25s ===
+
+
+Symbol Table:
+Identifier      Memory Address     Type
+----------------------------------------
+a              10000             integer
+b              10001             integer
+greater        10002             boolean
+equal          10003             boolean
+
+Assembly Listing:
+[ 1]   SIN                
+[ 2]   POPM   10000       
+[ 3]   SIN                
+[ 4]   POPM   10001       
+[ 5]   PUSHI  0           
+[ 6]   STO    greater       ; greater = <expr>
+[ 7]   PUSHI  0           
+[ 8]   STO    equal         ; equal = <expr>
+[ 9]   PUSHM  10000       
+[10]   PUSHM  10001       
+[11]   CMP_GT               ; compare >
+[12]   PUSHI  1           
+[13]   STO    greater       ; greater = <expr>
+[14]   PUSHM  10000       
+[15]   PUSHM  10001       
+[16]   CMP_EQ               ; compare ==
+[17]   PUSHI  1           
+[18]   STO    equal         ; equal = <expr>
+[19]   PUSHM  10002       
+[20]   SOUT               
+[21]   PUSHM  10003       
+[22]   SOUT               
+
+========================================
+

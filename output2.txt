@@ -1,0 +1,30 @@
+
+=== Running Test Case: test2.rat25s ===
+
+
+Symbol Table:
+Identifier      Memory Address     Type
+----------------------------------------
+a              10000             integer
+b              10001             integer
+flag           10002             boolean
+done           10003             boolean
+
+Assembly Listing:
+[ 1]   PUSHI  10          
+[ 2]   STO    a             ; a = <expr>
+[ 3]   PUSHM  10000       
+[ 4]   PUSHI  20          
+[ 5]   A                  
+[ 6]   STO    b             ; b = <expr>
+[ 7]   PUSHI  1           
+[ 8]   STO    flag          ; flag = <expr>
+[ 9]   PUSHI  0           
+[10]   STO    done          ; done = <expr>
+[11]   PUSHM  10000       
+[12]   SOUT               
+[13]   PUSHM  10002       
+[14]   SOUT               
+
+========================================
+

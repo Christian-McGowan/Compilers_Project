@@ -1,0 +1,15 @@
+$$
+[*This is a comment*]
+$$
+integer a, b;
+boolean flag, done;
+
+a = 10;
+b = a + 20;
+
+flag = true;
+done = false;
+
+print(a);
+print(flag);
+$$
