@@ -454,15 +454,13 @@ def main():
 
             tokens = lexer(source_code)
 
-            ### print tokens
-            '''
+            # print tokens
             print("Tokens:")
             print("Token         Lexeme")
             print("----------------------")
             for token in tokens:
                 print(str(token))
             print()
-            '''
 
             # capture parsing output
             buf2 = io.StringIO()
@@ -472,10 +470,8 @@ def main():
             parsing_output = buf2.getvalue()
 
             # print Parsing
-            '''
             print("Parsing Output:")
             print(parsing_output)
-            '''
 
             # print symbol table
             print_symbol_table()
