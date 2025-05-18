@@ -1,6 +1,6 @@
 # Simplified Rat24S Compiler
 
-> A recursive‑descent parser and code generator for a simplified Rat24S language, CPSC 323 Assignment 3.
+> A recursive‑descent parser and code generator for a simplified Rat24S language.
 
 ---
 
@@ -239,14 +239,3 @@ See `output3.txt` for a complete sample. Key sections:
 * **Symbol table**
 * **Assembly listing**
 
----
-
-## Notes
-
-* Use **only** the specified opcodes.
-* Provide **clear** error messages on semantic or syntax violations.
-* Adhere to CPSC 323 submission guidelines.
-
----
-
-*Spring 2025 CPSC 323 Assignment 3*
